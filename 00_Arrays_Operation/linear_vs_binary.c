@@ -46,9 +46,15 @@ int main()
     // Sorted array for binary search
     // Necessary condition :- The array should be sorted either ascending or descending
     int arr[] = {1, 3, 5, 56, 64, 73, 123, 225, 444};
+
     int size = sizeof(arr) / sizeof(int);
+    printf("Array Elements\n");
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d\t", arr[i]);
+    }
     int element = 444;
     int searchIndex = binarySearch(arr, size, element);
-    printf("The element %d was found at index %d \n", element, searchIndex);
+    printf("\nThe element %d was found at index %d \n", element, searchIndex);
     return 0;
 }

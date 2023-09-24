@@ -6,7 +6,7 @@ void display(int arr[], int n)
     // traversal
     for (int i = 0; i < n; i++)
     {
-        printf("%d\n", arr[i]);
+        printf("%d\t", arr[i]);
     }
     printf("\n");
 }
@@ -27,11 +27,13 @@ int main()
 {
     int arr[100] = {0, 1, 2, 3, 4, 5, 6};
     int size = 7;
+    printf("Before Insertion\n");
     display(arr, size);
     int element = 45;
     int index = 3;
     sortedinsertion(arr, size, element, 100, index);
     size += 1;
+    printf("Array After Insertion\n");
     display(arr, size);
     return 0;
 }
